@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+    }
+
+header {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding-top: 15px;
+}
+
+.logo-header{
+    width: 40%;
+    animation: creciendo 2500ms infinite alternate;
+}
+
+@keyframes creciendo {
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.barra-busqueda{
+    font-size: 1.5rem;
+    flex-grow: 0.8;
+    position: relative;
+}
+
+.barra-busqueda div{
+    display: flex;
+    justify-content: center;
+}
+
+.barra-busqueda input{
+    border: 1px solid #525252;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+.barra-busqueda button{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.icono-barra-busqueda{
+    height: 15px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    cursor: pointer;
+}
+
+.subtitulo-header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.burger-menu{
+    background-color: #03264C;
+    color: white;
+    text-align: center;
+    line-height: 55px;
+    font-size: 25px;
+    height: 50px;
+    width: 55px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.burger-menu a{
+    color: #FFF;
+}
+
+header nav{
+    display: none;
+}
+
+header nav ul{
+    padding-left: 0px;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+    margin: 210px auto 0px auto;
+    text-align: center;
+}
+
+main section article{
+    margin-bottom: 10px;
+}
+
+.home-banner{
+    width: 100%;
+    height: auto;
+}
+
+.titulo-producto{
+    display: none;
+    padding-left: 5px;
+}
+
+.precio-descuento{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.precio-producto{
+    width: 30%;
+}
+
+.descuento{
+    color:rgb(99, 231, 65);
+    width: 70%;
+}
+
+.foto-productos{
+    width: 100%;
+    height: auto;
+}
+
+.caja-descripcion-productos{
+    display: flex;
+    border-top: 1px solid #ebebeb;
+    padding: 30px 15px 15px 15px;
+    position: relative;
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.caja-descripcion-productos:hover{
+    opacity: 100;
+}
+
+.precio-descuento-icono-envio{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.icono-envio{
+    display: inline;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 15%;
+    top: auto;
+    transition: all 500ms;
+}
+
+.icono-envio:hover{
+    transform: rotate(-90deg);
+}
+
+.icono-nav{
+    height: 15px;
+    width: auto;
+    vertical-align: middle;
+}
+
+footer{
+    text-align: center;
+    color: #525252;
+}
+
+.headings-footer{
+    color: rgb(80, 80, 80);
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.icono-footer{
+    margin-top: 55px;
+    height: 3em;
+    width: auto;
+    filter: invert(23%) sepia(94%) saturate(1580%) hue-rotate(203deg) brightness(99%) contrast(99%);
+    transition: all 500ms;
+}
+
+.icono-footer:hover{
+    filter: invert(55%) sepia(81%) saturate(7087%) hue-rotate(233deg) brightness(106%) contrast(107%);
+}
+
+.copyright-footer{
+    margin-top: 35px;
+}
+
+.formulario-contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.formulario-contenedor-div{
+    margin: 20px 5px 0px 5px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-contenedor-div div{
+    margin: 5px 0px;
+}
+
+.formulario-contenedor-div-radio{
+    margin: 10px 5px 0px 5px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.formulario-contenedor div input{
+    width: 80%;
+    padding: 5px;
+}
+
+.formulario-contenedor div label{
+    font-weight: 600;
+}
+
+.formulario-contenedor button{
+    background-color: #03264C;
+    color: #FFF;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transition: all 400ms;
+}
+
+.formulario-contenedor button:hover{
+    background-color: #0022AA;
+}
+
+@media (min-width: 361px){                   /*Cambio de min width a 361px*/
+
+    header{
+        padding: 0px;
+        position: static;
+    }
+
+    header nav{
+        display: flex;
+    }
+
+    .top-header{
+        margin: 15px 20px 0px 20px;
+        justify-content: space-between;
+    }
+
+    .logo-header{
+        width: 20%;
+        flex-grow: 0.3;
+    }
+
+    .subtitulo-header{
+        width: 30%;
+        margin-top: 0px;
+    }
+
+    .Enlaces-header-general{
+        display: flex;
+        margin: 0px 20px 0px 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .enlaces-header{
+        display: flex;
+        flex-grow: 0.37;
+        justify-content: space-between;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .titulo-producto{
+        display: block;
+    }
+
+    main{
+        margin:  5px auto;
+    }
+
+    main section article{
+        box-shadow: none;
+        width: 40%;
+        margin: 10px;
+        transition: all 500ms;
+    }
+
+    main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .formulario-contenedor div{
+        width: 50%;
+    }
+
+    .formulario-contenedor button{
+        width: 30%;
+    }
+}
+
+@media (min-width: 769px){                   /*Cambio de min width a 769px*/
+    
+    header{
+        padding: 0px 60px 0px;
+        font-size: 1.4rem;
+    }
+
+    .logo-header{
+        flex-grow: 0;
+    }
+
+    .subtitulo-header{
+        width: 35%;
+        align-self: center;
+    }
+
+    .enlaces-header{
+        display: flex;
+        flex-grow: 0.1;
+        justify-content: space-between;
+    }
+
+    main h2{
+        font-size: 1.9rem;
+    }
+
+    main section article{
+        width: 22%;
+    }
+
+    .formulario-contenedor div input{
+        width: 40%;
+    }
+
+    .formulario-contenedor-div-radio{
+        justify-content: space-around;
+        width: 30%;
+    }
+
+    .formulario-contenedor button{
+        width: 15%;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer section{
+        width: 80%;
+    }
+
+    .headings-footer{
+        font-size: 1.5rem;
+    }
+    
+}
